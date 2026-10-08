@@ -3,59 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me | Owen Fugger</title>
+    <meta name="description" content="About Owen Fugger: third-year computer science student at Dalhousie University working in Python and C, exploring cybersecurity.">
+    <title>About Me | Owen Fugger</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
+    <div class="page">
+
+        <header class="site-header">
+            <nav class="navbar" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="page-title">
+                <h1>About Me</h1>
+            </div>
+
+            <!-- Why computer science -->
+            <section class="about-section" id="intro">
+                <h2>Why computer science?</h2>
+                <p>I've always loved taking devices and systems apart to see how they work, then trying to put them back together. One of my favourite memories with my dad is trying to take apart a digital camera and getting shocked over and over while we poked around inside.</p>
+                <p>That curiosity is what drew me to computer science. Cybersecurity interests me in particular because I like problem solving, and I enjoy preventing problems by paying attention and watching for what could go wrong. I'm exploring it by self-hosting and securing my own Linux server for this site.</p>
+            </section>
+
+            <!-- Education -->
+            <section class="about-section" id="education">
+                <h2>Education</h2>
+                <p>I'm in the third year of a computer science degree at Dalhousie University, after completing my first two years at Acadia University. This term I'm deepening my understanding of computer architecture and taking French.</p>
+            </section>
+
+            <!-- Skills: matches what co-op postings list -->
+            <section class="about-section" id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Python: comfortable, used in most of my projects</li>
+                    <li>C: intermediate (pointers, heap memory, linked lists)</li>
+                    <li>Git and GitHub: working knowledge</li>
+                    <li>French: intermediate</li>
+                </ul>
+            </section>
+
+            <!-- Currently learning -->
+            <section class="about-section" id="learning">
+                <h2>Currently learning</h2>
+                <ul class="skills-list">
+                    <li>HTML and CSS, by building this site</li>
+                    <li>Backend development, through the boot.dev course</li>
+                    <li>Cybersecurity, by self-hosting and securing my own server</li>
+                </ul>
+            </section>
+
+            <!-- What I'm proud of -->
+            <section class="about-section" id="proud">
+                <h2>What I'm proud of</h2>
+                <p>I'm proudest of two projects, because each taught me something different about how software gets built.</p>
+                <p>The Personal Finance Tracker, which I built in C with Nish Patel, taught me that working in a pair changes the whole process. The hardest part wasn't the code, it was deciding which features to build over others. You have to agree on those decisions before you start coding instead of just making them yourself.</p>
+                <p>Shelf-Wise, my store inventory app, taught me the other side: working alone on a full-stack application. I'm building it in phases to learn the full development process, from documentation and design through to a working product.</p>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Owen Fugger. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="https://github.com/JUMBOwen06" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/owen-fugger-933001389/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <!-- TODO: replace with your real email address -->
+                <li><a href="mailto:your-email@example.com">Email</a></li>
             </ul>
-        </nav>
+        </footer>
 
-        <h1>About Me</h1>
-    </header>
-
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p>Third year of a computer science degree at Dalhousie University, after completing my first two years at Acadia University. This term I'm deepening my understanding of computer architecture and learning HTML and CSS.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python: comfortable, used in most of my projects</li>
-            <li>C: intermediate (pointers, heap memory, linked lists)</li>
-            <li>Git/GitHub: working knowledge</li>
-            <li>HTML/CSS: learning (this page is my first)</li>
-            <li>French: intermediate</li>
-            <li>Cybersecurity: learning</li>
-        </ul>
-    </section>
-
-
-    <section id="proud">
-        <h2>What I'm proud of</h2>
-        <p>I'm proudest of two projects, because each taught me something different about how software gets built.</p>
-        <p>The Personal Finance Tracker, which I built in C with Nish Patel, taught me that working in a pair changes the whole process. The hardest part wasn't the code; it was deciding which features to build over others. You have to agree on those decisions before you code instead of just making them yourself.</p>
-        <p>Shelf-Wise, my store inventory app, taught me the other side: working alone on a full-stack application. I'm building it in phases to learn the full development process, from documentation and design through to a working product.</p>
-    </section>
-
-    
-    <footer>
-        <p>&copy; October 2026 Owen Fugger. All rights reserved</p>
-        <ul class="footer-links">
-            <li><a href="https://github.com/JUMBOwen06" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/owen-fugger-933001389/" target="_blank"> LinkedIn</a></li>
-        </ul>
-    </footer>
+    </div>
 </body>
 </html>
